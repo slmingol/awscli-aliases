@@ -27,6 +27,16 @@ $ mkdir -p ~/.aws/cli
 $ cp awscli-aliases/alias ~/.aws/cli/alias
 ```
 
+Alternativesly you can keep this file in a different location and simply create a link to it instead:
+
+```
+$ cd ~/<somedir>
+$ git clone https://github.com/awslabs/awscli-aliases.git
+$ mkdir -p ~/.aws/cli
+$ cd ~/.aws/cli
+$ ln -s ~/<somedir>/awscli-aliases/alias
+```
+
 To test that the aliases now work, run the following alias:
 ```
 aws whoami
